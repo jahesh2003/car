@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Car Dealership</title>
+  <style>
+
+
+.zoom-img {
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.zoom-img:hover {
+  transform: scale(1.2);
+}
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+    }
+
+    nav {
+      background-color: #444;
+      color: #fff;
+      text-align: center;
+      padding: 0.5em;
+    }
+
+    section {
+      padding: 1em;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1em;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+<script>
+// scripts.js
+
+document.addEventListener("DOMContentLoaded", function() {
+  const images = document.querySelectorAll(".zoom-img");
+
+  images.forEach(image => {
+    image.addEventListener("click", function() {
+      this.classList.toggle("zoomed");
+    });
+  });
+});
+
+</script>
+</head>
+<body>
+
+  <header>
+    <h1>Jahesh Motors Dealership</h1>
+    <p>Welcome to the best place for quality cars!</p>
+  </header>
+
+ <nav>
+    <a href="#home">Home</a> |
+    <a href="#inventory">Inventory</a> |
+    <a href="#services">Services</a> |
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welcome to Your Car Dealership</h2>
+    <p>Discover a wide range of high-quality cars that suit your preferences and budget.</p>
+    <img src="https://strapiadmin.f1rstmotors.com/uploads/website_14452ec4a1.JPG?w=1920&q=75" alt="Car Image" class="zoom-img" style="max-width: 100%; height: auto;">
+  </section>
+
+  <section id="inventory">
+    <h2>Explore Our Inventory</h2>
+    <p>View our latest collection of cars and find the perfect one for you.</p>
+    <img src="https://strapiadmin.f1rstmotors.com/uploads/WEBSITE_THUMBNAIL_922214c3bb.jpg?w=640&q=75" class="zoom-img" style="max-width: 100%; height: auto;">
+    <img src="https://strapiadmin.f1rstmotors.com/uploads/WEBSITE_THUMBNAIL_eff205d96f.jpg?w=640&q=75" class="zoom-img" style="max-width: 100%; height: auto;">
+    <img src="https://strapiadmin.f1rstmotors.com/uploads/WEBSITE_THUMBNAIL_b1e76edfe8.jpg?w=640&q=75" class="zoom-img" style="max-width: 100%; height: auto;">
+    <img src="https://strapiadmin.f1rstmotors.com/uploads/WEBSITE_THUMBNAIL_1_b169326e96.jpg?w=640&q=75" alt="Car Inventory Image" class="zoom-img" style="max-width: 100%; height: auto;"> 
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>Experience top-notch services including financing, maintenance, and more.</p>
+    <img src="https://ci3.googleusercontent.com/proxy/c9zuOaCSCTV0vQ1VBL74ckQtTixOT6ZNgfQgkq3M44UiW45QEmtSDOdxlxExGow_S736lfQQfUcYFesbBwVZgJLHNtNlSRpjmwaU6X1tswoC33hY0UwAE-ENyFx_9g=s0-d-e1-ft#https://dmscdn.vuelio.co.uk/publicitem/8dbf9f2e-ea80-4791-9b32-7af7d0b59104" alt="Service Image" class="zoom-img" style="max-width: 100%; height: auto;">
+    <img src="https://www.servicing-supercars.co.uk/ws/media-library/7097a2dc10d1481d8a9daf346e34d456/27180c46-a244-4cd5-89ec-09f3f0fea7d4.webp" alt="Service Image" class="zoom-img" style="max-width: 100%; height: auto;">
+  </section>
+
+  
+
+  <footer>
+    <h2>Contact Us</h2>
+    <p>Have questions or want to schedule a test drive? Reach out to us!</p>
+    <p>&copy; 2023 Your Car Dealership. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
