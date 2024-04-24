@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="car_showroom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <title>Your Car Showroom</title>
+
+</head>
+
+<body>
+
+    <!-- Headersection starts -->
+
+    <header class="header">
+
+        <i id="menu-btn" class="fa-solid fa-bars"></i>
+
+        <!-- <button id="menu-btn" onclick="hide()">
+            Menu
+            <i class="fa-solid fa-bars"></i>
+        </button> -->
+
+
+        <a href="#" class="logo"><span>YOUR</span>CAR</a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#Home">Home</a>
+            <a href="#Vehicles">Vehicles</a>
+            <a href="#services">Services</a>
+            <a href="#featured">featured</a>
+            <a href="#review">Reviews</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div id="login-btn">
+            <button class="btn">login</button>
+            <i style='font-size:24px' class='fas'>&#xf406;</i>
+            <!-- <i class='fas'>&#xf406;</i> -->
+        </div>
+
+    </header>
+
+    <!-- Headersection ends -->
+
+
+
+    <!-- LOGIN FORM STARS -->
+
+    <div class="login-form">
+
+        <span id="close-login-form" class="fa-solid fa-xmark"></span>
+
+        <!-- <i class="fa-solid fa-xmark"></i> -->
+        <form action="">
+            <h3>User login</h3>
+            <input type="email" placeholder="email" class="box">
+            <input type="password" placeholder="password" class="box">
+            <p>Forget your password <a href="#">click here</a></p>
+            <input type="submit" value="login" class="btn">
+            <p>or login with</p>
+            <div class="buttons">
+                <a href="#" class="btn">google</a>
+                <a href="#" class="btn">facebook</a>
+            </div>
+            <p>don't have an account <a href="#" id="create-btn">create</a></p>
+
+        </form>
+
+    </div>
+
+    <!-- LOGIN FORM ENDS -->
+
+
+    <!-- CREATE FORM STARS -->
+
+    <div class="create-form">
+
+        <span id="create-form-close" class="fa-solid fa-xmark"></span>
+
+        <!-- <i class="fa-solid fa-xmark"></i> -->
+        <form action="">
+            <h3>Create Account</h3>
+            <input type="text" placeholder="First name" class="box">
+            <input type="text" placeholder="Last name" class="box">
+            <input type="email" placeholder="email" class="box">
+            <input type="password" placeholder="password" class="box">
+            <input type="submit" value="Sign up" class="btn">
+            <p>already have an account <a href="#" id="login2">Login</a></p>
+        </form>
+
+    </div>
+
+    <!-- CREATE FORM ENDS -->
+
+
+
+    <!-- HOME SECTION START -->
+
+
+    <section class="home" id="Home">
+        <!-- data-* attribute gives ability to acces stored data in all html elements. wecan use this data attribute directly in Js  -->
+
+        <h1 class="home-page" data-speed="-2">Get your desired car</h1>
+        <img src="https://i.pinimg.com/originals/cd/f0/32/cdf032bbcd43dafc9ed373dab7de0adb.png" alt="" class="home-page"
+            data-speed="5">
+        <a href="#Vehicles" class="home-page" data-speed="7">Explore cars</a>
+
+    </section>
+
+
+
+    <!-- HOME SECTION ENDS -->
+
+
+    <!-- ICONS TO TELL MORE ABOUT OUR Showroom  -->
+
+    <section class="icons-container">
+        <div class="icons">
+            <i class="fa fa-home"></i>
+            <div class="content">
+                <h3>50+</h3>
+                <p>branches</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa fa-car"></i>
+            <div class="content">
+                <h3>690+</h3>
+                <p>cars sold</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa fa-users"></i>
+            <div class="content">
+                <h3>490+</h3>
+                <p>happy clients</p>
+            </div>
+        </div>
+
+        <div class="icons">
+            <i class="fa fa-car"></i>
+            <div class="content">
+                <h3>30+</h3>
+                <p>new cars</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- VEHICLES SECTION STARTS -->
+
+    <section id="Vehicles" class="Vehicles">
+
+        <h1 class="heading">Demanded <span> Vehicles</span></h1>
+
+        <div class="swiper vehicles-s">
+
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide box">
+                    <img src="https://imgd-ct.aeplcdn.com/1056x660/n/6gouesa_1463328.jpg?q=80" alt="">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"><span>Price: </span> 5-8 lakh/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>year
+                            <span class="fas fa-circle"></span>transmition
+                            <span class="fas fa-circle"></span>fuel type
+                            <span class="fas fa-circle"></span>max speed
+                        </p>
+                        <a href="#" class="btn">check out</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="https://www.aapkachannelnews.co.in/wp-content/uploads/2022/01/C1DZZLSLVR_M.png" alt="">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"><span>Price: </span> 14-27 lakh/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>year
+                            <span class="fas fa-circle"></span>transmition
+                            <span class="fas fa-circle"></span>fuel type
+                            <span class="fas fa-circle"></span>max speed
+                        </p>
+                        <a href="#" class="btn">check out</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="images/punch-fv.webp" alt="">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"><span>Price: </span>10.10 lakh /-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>year
+                            <span class="fas fa-circle"></span>transmition
+                            <span class="fas fa-circle"></span>fuel type
+                            <span class="fas fa-circle"></span>max speed
+                        </p>
+                        <a href="#" class="btn">check out</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="https://www.cartoq.com/wp-content/uploads/2017/11/2018-Mahindra-Scorpio-SUV-Facelift-3.jpg"
+                        alt="">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"><span>Price: </span> 15-24 lakh /-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>year
+                            <span class="fas fa-circle"></span>transmition
+                            <span class="fas fa-circle"></span>fuel type
+                            <span class="fas fa-circle"></span>max speed
+                        </p>
+                        <a href="#" class="btn">check out</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="https://auto.mahindra.com/-/media/project/mahindra/dotcom/mahindra/dark-theme-mahindra-images/hello-xuv/xuv-300/xuv300_-dark-theme-_-hello-xuv_1920x745px_-desktop.png?rev=d70dcda99ef04ee3a2cc77ed3c9a0966"
+                        alt="">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"><span>Price: </span>8 lakh /-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>year
+                            <span class="fas fa-circle"></span>transmition
+                            <span class="fas fa-circle"></span>fuel type
+                            <span class="fas fa-circle"></span>max speed
+                        </p>
+                        <a href="#" class="btn">check out</a>
+                    </div>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="https://imgd.aeplcdn.com/1920x1080/n/cw/ec/40453/tiago-ev-exterior-right-front-three-quarter-11.jpeg?isig=0&q=80&q=80"
+                        alt="">
+                    <div class="content">
+                        <h3>new model</h3>
+                        <div class="price"><span>Price: </span> 9-12 lakh/-</div>
+                        <p>
+                            new
+                            <span class="fas fa-circle"></span>year
+                            <span class="fas fa-circle"></span>transmition
+                            <span class="fas fa-circle"></span>fuel type
+                            <span class="fas fa-circle"></span>max speed
+                        </p>
+                        <a href="#" class="btn">check out</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+
+        </div>
+
+    </section>
+
+    <!-- VEHICLEs SECTION ENDS -->
+
+
+    <section class="featured" id="featured">
+        <h1 class="heading"><span>featured </span> cars</h1>
+
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="https://imgd.aeplcdn.com/1920x1080/n/cw/ec/122451/range-rover-sport-exterior-right-front-three-quarter-20.jpeg?isig=0&q=80&q=80"
+                        alt="">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">Rs 68,00,000/-</div>
+                    <a href="#" class="btn">check out</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="https://5.imimg.com/data5/XC/GC/GLADMIN-13487668/tata-zest-car.png" alt="">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div class="price">Rs 28,00,000/-</div>
+                    <a href="#" class="btn">check out</a>
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <img src="https://images.drivespark.com/img/2023/03/mahindra-thar-4x4-everest-white-front-view1-1678705322.jpg"
+                        alt="">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">Rs 18,00,000/-</div>
+                    <a href="#" class="btn">check out</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="https://imgd.aeplcdn.com/1920x1080/n/cw/ec/40453/tiago-ev-exterior-right-front-three-quarter-11.jpeg?isig=0&q=80&q=80"
+                        alt="">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                    </div>
+                    <div class="price">Rs 23,00,000/-</div>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <div class="swiper featured-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide box">
+                    <img src="https://i.pinimg.com/originals/24/76/4f/24764fa2649f3394f7ba2ad89fe53bc3.png" alt="">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">Rs 60,00,000/-</div>
+                    <a href="#" class="btn">check out</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="https://static.vecteezy.com/system/resources/previews/017/281/511/non_2x/toyota-fortuner-top-model-2755cc-automatic-transmission-turbo-engine-6-speed-gear-free-png.png"
+                        alt="">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">Rs 35,00,000/-</div>
+                    <a href="#" class="btn">check out</a>
+                </div>
+
+
+                <div class="swiper-slide box">
+                    <img src="https://cdni.autocarindia.com/Utils/ImageResizer.ashx?n=https://cdni.autocarindia.com/ExtraImages/20210209065733_Hector.jpg&w=700&q=90&c=1"
+                        alt="">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                    <div class="price">Rs 18,00,000/-</div>
+                    <a href="#" class="btn">check out</a>
+                </div>
+
+                <div class="swiper-slide box">
+                    <img src="https://i0.wp.com/alphacars.co.in/wp-content/uploads/2023/02/Untitled-design-21.png?fit=800%2C534&ssl=1"
+                        alt="">
+                    <h3>new model</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fa-regular fa-star-sharp"></i>
+                    </div>
+                    <div class="price">Rs 30,00,000/-</div>
+                    <a href="#" class="btn">check out</a>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+
+
+    <section id="services" class="services">
+        <h1 class="heading">Services</h1>
+        <div class="box-container">
+            <div class="box">
+                <i class="fas fa-car"></i>
+                <h3>Car Selling</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. !</p>
+                <p>for more details contact us</p>
+                <a href="#contact" class="btn">Enquire</a>
+            </div>
+            <div class="box">
+                <i class="fas fa-tools"></i>
+                <h3>Repair</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. !</p>
+                <p>for more details contact us</p>
+                <a href="#contact" class="btn">Enquire</a>
+            </div>
+            <div class="box">
+                <i class="fas fa-car-crash"></i>
+                <h3>Car Insurance</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. ipsum
+                <p>for more details contact us</p>!</p>
+                <a href="#contact" class="btn">Enquire</a>
+            </div>
+            <div class="box">
+                <i class="fas fa-car-battery"></i>
+                <h3>Battery Selling</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. !</p>
+                <p>for more details contact us</p>
+                <a href="#contact" class="btn">Enquire</a>
+            </div>
+            <div class="box">
+                <i class="fas fa-gas-pump"></i>
+                <h3>Oil Change</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. !</p>
+                <p>for more details contact us</p>
+                <a href="#contact" class="btn">Enquire</a>
+            </div>
+            <div class="box">
+                <i class="fas fa-headset"></i>
+                <h3>Support</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. !</p>
+                <p>for more details contact us</p>
+                <a href="#contact" class="btn">Enquire</a>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- REVIEW SECTION STARTS  -->
+
+    <section class="review" id="review">
+
+        <h1 class="heading">client's <span>review</span></h1>
+
+        <div class="review-slider">
+
+            <div class="box">
+                <img src="images/dp.jpg" alt="person 1">
+                <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati asperiores vitae
+                        aperiam. Unde, ut repellat! Provident id deserunt porro?</p>
+                    <h3>Name</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="box">
+                <img src="images/dp.jpg" alt="person 2">
+                <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati asperiores vitae
+                        aperiam. Unde, ut repellat! Provident id deserunt porro?</p>
+                    <h3>Name</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="box">
+                <img src="images/dp.jpg" alt="person 3">
+                <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati asperiores vitae
+                        aperiam. Unde, ut repellat! Provident id deserunt porro?</p>
+                    <h3>Name</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+            <div class="box">
+                <img src="images/dp.jpg" alt="person 4">
+                <div class="content">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi obcaecati asperiores vitae
+                        aperiam. Unde, ut repellat! Provident id deserunt porro?</p>
+                    <h3>Name</h3>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- REVIEW SECTION ENDs -->
+
+    <!-- CONTACT SECTION -->
+
+    <section class="contact" id="contact">
+
+        <h3 class="heading"><span>Contact </span> us</h3>
+
+        <div class="row">
+
+            <iframe class="map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30171.846112338986!2d72.8477069548655!3d19.042588557900476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8b675af4ae9%3A0xeda1a459488d6b02!2sSion%2C%20Mumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1704364166872!5m2!1sen!2sin"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form action="">
+                <h3>get in touch</h3>
+                <input type="text" placeholder="name" class="box">
+                <input type="email" placeholder="email" class="box">
+                <input type="number" placeholder="mobile no" class="box">
+                <textarea placeholder="message" name="" id="" class="box" cols="30" rows="10"></textarea>
+                <input type="submit" value="send message" class="btn">
+            </form>
+
+        </div>
+
+
+    </section>
+
+
+
+    <!-- CONTACT SECTION ENDS -->
+
+
+    <!-- Footer Section HTML -->
+    <section class="footer">
+
+        <div class="box-container">
+
+            <div class="box">
+                <h3>Our Branches</h3>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Mumbai </a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Ahmadnagar </a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Pune </a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Nagpur </a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Kolhapur </a>
+            </div>
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#Home"><i class="fas fa-arrow-right"></i> Home </a>
+                <a href="#Vehicles"><i class="fas fa-arrow-right"></i> Vehicles </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> Services </a>
+                <a href="#"><i class="fas fa-arrow-right"></i> featured </a>
+                <a href="#review"><i class="fas fa-arrow-right"></i> Reviews </a>
+                <a href="#contact"><i class="fas fa-arrow-right"></i> Contact </a>
+            </div>
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="#"><i class="fas fa-phone"></i> +123-456-7890 </a>
+                <a href="#"><i class="fas fa-phone"></i> +111-222-4444 </a>
+                <a href="#"><i class="fas fa-envelope"></i> query@yourcar.com </a>
+                <a href="#"><i class="fas fa-envelope"></i> services@yourcar.com </a>
+            </div>
+
+            <div class="box">
+                <h3>Quick links</h3>
+                <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i> facebook
+                </a>
+                <a href="https://twitter.com/?lang=en" target="_blank"><i class="fa-brands fa-twitter"></i> twitter
+                </a>
+                <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i>
+                    instagram
+                </a>
+                <a href="https://in.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i> linkedin
+                </a>
+
+            </div>
+
+        </div>
+        <div class="credit">By Your Car | All right reserve</div>
+
+    </section>
+
+
+    <!-- FOOTER SECTION HTML ENDS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+
+    <script src="car_showroom.js"></script>
+
+
+</body>
+
+</html>
